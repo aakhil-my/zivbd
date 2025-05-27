@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ziva Falisha Birthday!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body class="bg-gradient-to-r from-pink-300 to-purple-300 text-white font-montserrat overflow-hidden relative">
+    <audio id="background-music" src="https://www.bensound.com/bensound-music/bensound-love.mp3" loop autoplay></audio>
+
+    <div id="app" class="relative w-full h-screen overflow-hidden">
+        <section class="page visible absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700" id="page1">
+            <h1 class="text-6xl font-dancing-script mb-6 animate-fade-in text-center px-4">
+                Happy Birthday, Miss Ziva!
+            </h1>
+            <button class="bg-white text-pink-500 px-6 py-2 rounded shadow hover:scale-105 transform transition duration-300" onclick="nextPage(2)">Click</button>
+            <div class="stars pointer-events-none" aria-hidden="true"></div>
+        </section>
+
+        <section
+            class="page hidden absolute inset-0 flex flex-col items-center justify-center bg-[url('https://source.unsplash.com/1600x900/?candle')] bg-cover transition-opacity duration-700 px-6 text-center"
+            id="page2"
+        >
+            <h2 class="text-4xl font-dancing-script mb-6">Puisi</h2>
+            <p class="text-lg max-w-xl mx-auto" id="poem">
+                <!-- Teks puisi animasi muncul satu per satu -->
+            </p>
+            <button class="bg-white text-pink-500 px-6 py-2 rounded shadow mt-6 hover:scale-105 transform transition duration-300" onclick="nextPage(3)">
+                Lanjutkan
+            </button>
+        </section>
+
+        <section class="page hidden absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700 px-6 text-center" id="page3">
+            <h2 class="text-4xl font-dancing-script mb-6">Galeri</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 max-w-5xl w-full">
+                <figure class="relative rounded overflow-hidden shadow-lg">
+                    <img src="Pict of Ziv [7A32000].png" alt="love" class="transition-transform duration-300 hover:scale-105 w-full" />
+                    <figcaption class="absolute bottom-0 left-0 bg-white bg-opacity-70 text-pink-500 p-2 text-sm font-semibold">
+                        Ziva Falisha
+                    </figcaption>
+                </figure>
+                <figure class="relative rounded overflow-hidden shadow-lg">
+                    <img src="Pict of Ziv 2 [96EC845].png" alt="Your Smile" class="transition-transform duration-300 hover:scale-105 w-full" />
+                    <figcaption class="absolute bottom-0 left-0 bg-white bg-opacity-70 text-pink-500 p-2 text-sm font-semibold">
+                        Your Smile
+                    </figcaption>
+                </figure>
+                <figure class="relative rounded overflow-hidden shadow-lg">
+                    <img src="Pict of Ziv 3.png" alt="My Favorite Moment" class="transition-transform duration-300 hover:scale-105 w-full" />
+                    <figcaption class="absolute bottom-0 left-0 bg-white bg-opacity-70 text-pink-500 p-2 text-sm font-semibold">
+                        Pretty Kids
+                    </figcaption>
+                </figure>
+                <figure class="relative rounded overflow-hidden shadow-lg">
+                    <img src="New Project 4 [6651BFF].png" alt="Together Forever" class="transition-transform duration-300 hover:scale-105 w-full" />
+                    <figcaption class="absolute bottom-0 left-0 bg-white bg-opacity-70 text-pink-500 p-2 text-sm font-semibold">
+                        Your Face
+                    </figcaption>
+                </figure>
+                <figure class="relative rounded overflow-hidden shadow-lg">
+                    <img src="New Project 5 [1A85D66].png" alt="Memories 4" class="transition-transform duration-300 hover:scale-105 w-full" />
+                    <figcaption class="absolute bottom-0 left-0 bg-white bg-opacity-70 text-pink-500 p-2 text-sm font-semibold">
+                        Cutest Photos
+                    </figcaption>
+                </figure>
+                <figure class="relative rounded overflow-hidden shadow-lg">
+                    <img src="New Project 192 [64DA5FC].png" alt="Memories 5" class="transition-transform duration-300 hover:scale-105 w-full" />
+                    <figcaption class="absolute bottom-0 left-0 bg-white bg-opacity-70 text-pink-500 p-2 text-sm font-semibold">
+                        My Favorite Memories
+                    </figcaption>
+                </figure>
+            </div>
+            <button class="bg-white text-pink-500 px-6 py-2 rounded shadow mt-6 hover:scale-105 transform transition duration-300" onclick="nextPage(4)">
+                Lanjutkan
+            </button>
+        </section>
+
+        <section class="page hidden absolute inset-0 flex flex-col items-center justify-center transition-opacity duration-700 px-6 text-center" id="page4">
+  <h2 class="text-4xl font-dancing-script mb-6">Happy Birthday!</h2>
+
+  <p class="mt-6 max-w-xl text-lg italic">
+    “No words are enough to express my love for you. Happy birthday, forever and always.”
+  </p>
+
+  <div class="flex flex-col sm:flex-row gap-4 mt-8">
+    <a
+      href="https://forms.gle/cSPoK5dFmGm7KcSZ9"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-white text-pink-500 px-6 py-2 rounded shadow hover:scale-105 transform transition duration-300 font-semibold"
+    >
+      🎁 Claim Birthday Gift
+    </a>
+    <a
+      href="https://forms.gle/X9wNutXJiPvyq979A"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="bg-pink-500 text-white px-6 py-2 rounded shadow hover:scale-105 transform transition duration-300 font-semibold"
+    >
+      💌 Meet With Akhil
+    </a>
+  </div>
+</section>
+
+    </div>
+
+    <!-- <nav class="fixed bottom-0 left-0 right-0 bg-white text-pink-500 p-4 flex justify-around font-semibold">
+        <button onClick="goToPage(1)">Halaman 1</button>
+        <button onClick="goToPage(2)">Halaman 2</button>
+        <button onClick="goToPage(3)">Halaman 3</button>
+        <button onClick="goToPage(4)">Halaman 4</button>
+    </nav> -->
+
+    <script src="script.js"></script>
+</body>
+</html>
+
